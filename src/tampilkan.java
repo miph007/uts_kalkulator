@@ -94,6 +94,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         btn8.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
 
         clear.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         clear.setText("C");
@@ -124,6 +129,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         btn9.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
 
         bagi.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         bagi.setText("/");
@@ -252,7 +262,8 @@ public class tampilkan extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        // TODO add your handling code here:
+    angka +="0";
+    tampilkan.setText(angka);
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
@@ -305,6 +316,16 @@ public class tampilkan extends javax.swing.JFrame {
     angka +="7";
     tampilkan.setText(angka);
     }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+    angka +="8";
+    tampilkan.setText(angka);
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+    angka +="9";
+    tampilkan.setText(angka);
+    }//GEN-LAST:event_btn9ActionPerformed
 
     /**
      * @param args the command line arguments
