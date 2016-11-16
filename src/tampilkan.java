@@ -166,6 +166,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         hasil.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         hasil.setText("=");
+        hasil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hasilActionPerformed(evt);
+            }
+        });
 
         btn3.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn3.setText("3");
@@ -227,8 +232,8 @@ public class tampilkan extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tampilan, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addComponent(tampilan, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -371,6 +376,37 @@ public class tampilkan extends javax.swing.JFrame {
      angka +="-";
     tampilkan.setText(angka);
     }//GEN-LAST:event_plus_minusActionPerformed
+
+    private void hasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilActionPerformed
+    switch(pilihan){
+        case 1:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 * angka2;
+            angka = Double.toString(jumlah);
+            tampilkan.setText(angka);
+            break;
+        case 2:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 / angka2;
+            angka = Double.toString(jumlah);
+            tampilkan.setText(angka);
+            break;
+        case 3:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 + angka2;
+            angka = Double.toString(jumlah);
+            tampilkan.setText(angka);
+            break;
+        case 4:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 - angka2;
+            angka = Double.toString(jumlah);
+            tampilkan.setText(angka);
+            break;
+            default:
+            break;
+    }
+    }//GEN-LAST:event_hasilActionPerformed
 
     /**
      * @param args the command line arguments
