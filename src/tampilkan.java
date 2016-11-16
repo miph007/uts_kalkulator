@@ -110,6 +110,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         plus_minus.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         plus_minus.setText("+/-");
+        plus_minus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plus_minusActionPerformed(evt);
+            }
+        });
 
         kali.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         kali.setText("x");
@@ -361,6 +366,11 @@ public class tampilkan extends javax.swing.JFrame {
     angka="";
     pilihan=4;
     }//GEN-LAST:event_minusActionPerformed
+
+    private void plus_minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plus_minusActionPerformed
+     angka +="-";
+    tampilkan.setText(angka);
+    }//GEN-LAST:event_plus_minusActionPerformed
 
     /**
      * @param args the command line arguments
