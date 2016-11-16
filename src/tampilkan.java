@@ -287,7 +287,11 @@ public class tampilkan extends javax.swing.JFrame {
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
-        // TODO add your handling code here:
+    tampilkan.setText("");
+    angka1=0.0;
+    angka2=0.0;
+    jumlah=0.0;
+    angka="";
     }//GEN-LAST:event_clearActionPerformed
 
     private void kaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kaliActionPerformed
