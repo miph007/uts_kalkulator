@@ -22,7 +22,7 @@ public class tampilkan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tampilan = new javax.swing.JTextField();
+        tampilkan = new javax.swing.JTextField();
         btn7 = new javax.swing.JButton();
         btn0 = new javax.swing.JButton();
         btn4 = new javax.swing.JButton();
@@ -43,6 +43,12 @@ public class tampilkan extends javax.swing.JFrame {
         btn6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        tampilkan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tampilkanActionPerformed(evt);
+            }
+        });
 
         btn7.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn7.setText("7");
@@ -195,7 +201,7 @@ public class tampilkan extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tampilan)
+                    .addComponent(tampilkan)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(plus_minus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -232,7 +238,7 @@ public class tampilkan extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tampilan, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tampilkan, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -408,6 +414,10 @@ public class tampilkan extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_hasilActionPerformed
 
+    private void tampilkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tampilkanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tampilkanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -461,7 +471,7 @@ public class tampilkan extends javax.swing.JFrame {
     private javax.swing.JButton minus;
     private javax.swing.JButton plus;
     private javax.swing.JButton plus_minus;
-    private javax.swing.JTextField tampilan;
+    private javax.swing.JTextField tampilkan;
     private javax.swing.JButton titik;
     // End of variables declaration//GEN-END:variables
 }
