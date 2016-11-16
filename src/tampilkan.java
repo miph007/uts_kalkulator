@@ -120,7 +120,7 @@ public class tampilkan extends javax.swing.JFrame {
         });
 
         titik.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
-        titik.setText(".");
+        titik.setText(",");
         titik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 titikActionPerformed(evt);
@@ -137,6 +137,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         bagi.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         bagi.setText("/");
+        bagi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bagiActionPerformed(evt);
+            }
+        });
 
         plus.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         plus.setText("+");
@@ -148,6 +153,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         minus.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         minus.setText("-");
+        minus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minusActionPerformed(evt);
+            }
+        });
 
         hasil.setFont(new java.awt.Font("Tunga", 0, 12)); // NOI18N
         hasil.setText("=");
@@ -281,15 +291,22 @@ public class tampilkan extends javax.swing.JFrame {
     }//GEN-LAST:event_clearActionPerformed
 
     private void kaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kaliActionPerformed
-        // TODO add your handling code here:
+    angka1=Double.parseDouble(angka);
+    tampilkan.setText("x");
+    angka="";
+    pilihan=1;
     }//GEN-LAST:event_kaliActionPerformed
 
     private void titikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_titikActionPerformed
-        // TODO add your handling code here:
+    angka +=",";
+    tampilkan.setText(angka);
     }//GEN-LAST:event_titikActionPerformed
 
     private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
-        // TODO add your handling code here:
+    angka1=Double.parseDouble(angka);
+    tampilkan.setText("+");
+    angka="";
+    pilihan=3;
     }//GEN-LAST:event_plusActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
@@ -326,6 +343,20 @@ public class tampilkan extends javax.swing.JFrame {
     angka +="9";
     tampilkan.setText(angka);
     }//GEN-LAST:event_btn9ActionPerformed
+
+    private void bagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bagiActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampilkan.setText("/");
+    angka="";
+    pilihan=2;
+    }//GEN-LAST:event_bagiActionPerformed
+
+    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampilkan.setText("-");
+    angka="";
+    pilihan=4;
+    }//GEN-LAST:event_minusActionPerformed
 
     /**
      * @param args the command line arguments
