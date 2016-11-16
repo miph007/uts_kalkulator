@@ -10,6 +10,7 @@ public class tampilkan extends javax.swing.JFrame {
     
     public tampilkan() {
         initComponents();
+        
         angka="";
     }
 
