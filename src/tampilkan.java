@@ -46,6 +46,11 @@ public class tampilkan extends javax.swing.JFrame {
 
         btn7.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
 
         btn0.setFont(new java.awt.Font("Tunga", 1, 12)); // NOI18N
         btn0.setText("0");
@@ -251,11 +256,13 @@ public class tampilkan extends javax.swing.JFrame {
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+    angka +="4";
+    tampilkan.setText(angka);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+    angka +="5";
+    tampilkan.setText(angka);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
@@ -275,7 +282,8 @@ public class tampilkan extends javax.swing.JFrame {
     }//GEN-LAST:event_plusActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        // TODO add your handling code here:
+    angka +="6";
+    tampilkan.setText(angka);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -292,6 +300,11 @@ public class tampilkan extends javax.swing.JFrame {
     angka +="3";
     tampilkan.setText(angka);
     }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+    angka +="7";
+    tampilkan.setText(angka);
+    }//GEN-LAST:event_btn7ActionPerformed
 
     /**
      * @param args the command line arguments
